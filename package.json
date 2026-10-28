@@ -1,0 +1,6 @@
+{
+  "name": "saessak-plant-explorer",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=18" }
+}
