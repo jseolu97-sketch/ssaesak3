@@ -60,7 +60,7 @@ export function buildGeminiBody(body) {
         return {
             systemInstruction: { parts: [{ text: `${CHAT_RULES}\n참고 정보: ${clip(body.context, 600)}` }] },
             contents,
-            generationConfig: { temperature: 0.7, maxOutputTokens: 600 },
+            generationConfig: { temperature: 0.7, maxOutputTokens: 1024, thinkingConfig: { thinkingBudget: 0 } },
         };
     }
     return 'unknown task';
